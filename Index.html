@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <header>
+                <h2> Repository name and description</h2>
+                <span  id="github"></span>
+            </header>
+            <hr>
+            <main class="flex-left-center">
+                <form action="/ajax.php" method="post" id="calculationForm" >
+                    <label for="data_field">Enter command and numbers:</label>
+                    <textarea rows="5" cols="50" placeholder="Operation 9 8 7 4 5 6" id="data_field" name="data_field"></textarea>
+                    <div id="error" style="color:red;"></div>
+                    <input type="submit">
+                </form>
+
+                <div class="responce_block">
+                    <div><span>Sorted numbers: </span></div>
+                    <div id="numbers"></div>
+                </div>
+
+                <div class="responce_block">
+                    <div><span>Result: </span></div>
+                    <div id="total"></div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
